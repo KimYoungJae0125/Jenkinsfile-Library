@@ -7,7 +7,7 @@ def test(String stage) {
           "type": "header",
           "text": [
                   "type": "plain_text",
-                  "text": "${stage} Stage - ${env.JOB_NAME} - #${env.BUILD_NUMBER}"
+                  "text": "${env.JOB_NAME}(#${env.BUILD_NUMBER}) - ${stage} Stage"
           ]
       ],
       [
