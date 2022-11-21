@@ -5,7 +5,9 @@ import jenkins.messages
 def call(String stage) {
     def messagesFile = new messages()
 
-    slackSend(color: "good", blocks: messagesFile.test(stage))
+    def status = currentBuild.result.toLowerCase()
+
+    slackSend(color: "good", blocks: messagesFile.test(stage, status))
 
 
 }
