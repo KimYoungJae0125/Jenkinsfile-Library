@@ -2,13 +2,10 @@
 
 import jenkins.messages
 
-def call() {
+def call(String stage) {
     def messagesFile = new messages()
 
-    println(messagesFile.test())
-
-
-    slackSend(color: "good", blocks: messagesFile.test())
+    slackSend(color: "good", blocks: messagesFile.test(stage))
 
 
 }

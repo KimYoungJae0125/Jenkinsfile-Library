@@ -1,13 +1,13 @@
 package jenkins
 
-def test() {
+def test(String stage) {
   [
 
       [
           "type": "header",
           "text": [
                   "type": "plain_text",
-                  "text": "Stage1"
+                  "text": "${stage} Stage"
           ]
       ],
       [
