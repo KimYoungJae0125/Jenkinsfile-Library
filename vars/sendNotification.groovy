@@ -8,7 +8,7 @@ def call() {
     println(messagesFile.test())
 
 
-    slackSend(color: "good", messagesFile.test())
+    slackSend(color: "good", blocks: messagesFile.test())
 
 
 }
