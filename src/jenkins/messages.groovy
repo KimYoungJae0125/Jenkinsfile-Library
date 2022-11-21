@@ -17,6 +17,13 @@ def test(String stage) {
           "type": "section",
           "text": [
                   "type": "mrkdwn",
+                  "text": "`Status` : ${currentBuild.result}"
+          ]
+      ],
+      [
+          "type": "section",
+          "text": [
+                  "type": "mrkdwn",
                   "text": "`Build Url` : ${env.BUILD_URL}"
           ]
       ],
