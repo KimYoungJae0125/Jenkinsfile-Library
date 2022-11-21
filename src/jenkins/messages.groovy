@@ -6,7 +6,7 @@ def test() {
       [
           "type": "header",
           "text": [
-                  "type": "mrkdwn",
+                  "type": "plain_text",
                   "text": "Stage1"
           ]
       ],
