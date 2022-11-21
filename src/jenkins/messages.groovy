@@ -45,7 +45,7 @@ def test(String stage) {
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "```${GIT_COMMIT_MESSAGE}```"
+                  "text": "`Git Commit Message` : ```${GIT_COMMIT_MESSAGE}```"
           ]
       ],
       [
