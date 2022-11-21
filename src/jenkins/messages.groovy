@@ -17,7 +17,7 @@ def test(String stage) {
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "`Status` : ${currentBuild.result}"
+                  "text": "`Status` : ${${currentBuild.result}.toLowerCase()}"
           ]
       ],
       [
