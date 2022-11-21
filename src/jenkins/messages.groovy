@@ -17,7 +17,7 @@ def test() {
               "type": "section",
               "text": [
                       "type": "mrkdwn",
-                      "text": "Build, ${env.BUILD_JOB_NAME}"
+                      "text": "Build, ${env.JOB_NAME}"
               ]
       ],
   ]
