@@ -2,16 +2,24 @@ package jenkins
 
 def test() {
   [
+
       [
-          "type": "section",
+          "type": "header",
           "text": [
                   "type": "mrkdwn",
-                  "text": "Hello, Assistant to the Regional Manager Dwight! *Michael Scott* wants to know where you'd like to take the Paper Company investors to dinner tonight.\n\n *Please select a restaurant:*"
+                  "text": "Stage1"
           ]
       ],
       [
         "type": "divider"
-      ]
+      ],
+      [
+              "type": "section",
+              "text": [
+                      "type": "mrkdwn",
+                      "text": "Build, ${env.BUILD_JOB_NAME}"
+              ]
+      ],
   ]
 
 }
