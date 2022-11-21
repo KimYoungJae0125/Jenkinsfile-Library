@@ -19,7 +19,7 @@ def test() {
                       "type": "mrkdwn",
                       "text": "Build, ${env.JOB_NAME}"
               ]
-      ],
+      ]
   ]
 
 }
