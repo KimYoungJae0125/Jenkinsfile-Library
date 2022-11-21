@@ -1,6 +1,6 @@
 package jenkins
 
-def test(String stage, String status) {
+def test(String stage, String status, String emoji) {
   [
 
       [
@@ -17,7 +17,7 @@ def test(String stage, String status) {
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "`Status` : ${status}"
+                  "text": "`Status` : ${status} - ${emoji}"
           ]
       ],
       [
