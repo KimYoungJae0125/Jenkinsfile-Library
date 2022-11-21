@@ -7,7 +7,7 @@ def test(String stage) {
           "type": "header",
           "text": [
                   "type": "plain_text",
-                  "text": "${stage} Stage"
+                  "text": "${stage} Stage\n*${env.JOB_NAME} - #${env.BUILD_NUMBER}*"
           ]
       ],
       [
@@ -17,14 +17,21 @@ def test(String stage) {
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "*${env.JOB_NAME} - #${env.BUILD_NUMBER}*\n`Build Url` : ${env.BUILD_URL}"
+                  "text": "`Build Url` : ${env.BUILD_URL}"
           ]
       ],
       [
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "`Git Info` : ${env.GIT_URL} - ${env.GIT_BRANCH}"
+                  "text": "`Git Url` : ${env.GIT_URL}"
+          ]
+      ],
+      [
+          "type": "section",
+          "text": [
+                  "type": "mrkdwn",
+                  "text": "`Git Branch` : ${env.GIT_BRANCH}"
           ]
       ],
       [
