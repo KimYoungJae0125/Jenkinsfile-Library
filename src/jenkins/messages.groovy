@@ -7,7 +7,7 @@ def test(String stage, String status, String formatting, String emoji) {
           "type": "header",
           "text": [
                   "type": "plain_text",
-                  "text": "${env.JOB_NAME}(#${env.BUILD_NUMBER}) - ${stage} Stage"
+                  "text": "${env.JOB_NAME}(#${env.BUILD_NUMBER}) - ${stage} Stage ${emoji}${emoji}${emoji}"
           ]
       ],
       [
@@ -17,7 +17,7 @@ def test(String stage, String status, String formatting, String emoji) {
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "`Status` : ${formatting}${status}${formatting} - ${emoji}"
+                  "text": "`Status` : ${formatting}${status}${formatting}"
           ]
       ],
       [
