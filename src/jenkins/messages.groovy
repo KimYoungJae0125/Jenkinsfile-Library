@@ -17,21 +17,21 @@ def test(String stage) {
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "${env.JOB_NAME} - #${env.BUILD_NUMBER}\n${env.BUILD_URL}"
+                  "text": "*${env.JOB_NAME} - #${env.BUILD_NUMBER}*\n`Build Url` : ${env.BUILD_URL}"
           ]
       ],
       [
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "${env.GIT_URL}(${env.GIT_BRANCH})"
+                  "text": "`Git Info` : ${env.GIT_URL} - ${env.GIT_BRANCH}"
           ]
       ],
       [
           "type": "section",
           "text": [
                   "type": "mrkdwn",
-                  "text": "${GIT_COMMIT_AUTHOR}(${GIT_COMMIT_AUTHOR_EMAIL})"
+                  "text": "`Git Commiter` : ${GIT_COMMIT_AUTHOR}(${GIT_COMMIT_AUTHOR_EMAIL})"
           ]
       ],
       [
