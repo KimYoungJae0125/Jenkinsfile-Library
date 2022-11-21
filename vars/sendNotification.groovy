@@ -3,7 +3,9 @@
 import jenkins.messages
 
 def call() {
-    def messagesFile = new messages();
+    def messagesFile = new messages()
+
+    println(messagesFile.test())
 
 
     slackSend(color: "good", messagesFile.test())
